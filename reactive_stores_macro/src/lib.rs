@@ -278,6 +278,8 @@ fn field_to_tokens(
         quote! { #ident }
     };
 
+    assert!(false);
+
     dbg!(name);
     dbg!(generics);
     dbg!(any_store_field);
