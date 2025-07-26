@@ -283,6 +283,7 @@ fn field_to_tokens(
             let mode = &modes[0];
             match mode {
                 SubfieldMode::Keyed(keyed_by, key_ty) => {
+                    dbg!(orig_ident);
                     dbg!(include_body);
                     dbg!(keyed_by);
                     dbg!(key_ty);
