@@ -281,6 +281,7 @@ fn field_to_tokens(
     dbg!(name);
     dbg!(generics);
     dbg!(any_store_field);
+    dbg!(ty);
 
     if let Some(modes) = modes {
         if modes.len() == 1 {
