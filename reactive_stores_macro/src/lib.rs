@@ -278,6 +278,10 @@ fn field_to_tokens(
         quote! { #ident }
     };
 
+    dbg!(name);
+    dbg!(generics);
+    dbg!(any_store_field);
+
     if let Some(modes) = modes {
         if modes.len() == 1 {
             let mode = &modes[0];
