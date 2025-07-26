@@ -283,6 +283,7 @@ fn field_to_tokens(
             let mode = &modes[0];
             match mode {
                 SubfieldMode::Keyed(keyed_by, key_ty) => {
+                    dbg!(include_body);
                     dbg!(keyed_by);
                     dbg!(key_ty);
                     dbg!(name);
@@ -291,6 +292,7 @@ fn field_to_tokens(
                     dbg!(ty);
 
                     let signature = quote! {
+                        #[track_caller]
                         fn #ident(self) ->  #library_path::KeyedSubfield<#any_store_field, #name #generics, #key_ty, #ty>
                     };
 
